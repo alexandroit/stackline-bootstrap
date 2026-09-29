@@ -1,44 +1,24 @@
-name: "CodeQL"
+name: CodeQL
 
 on:
   push:
-    branches:
-      - main
-      - v4-dev
-      - "!dependabot/**"
+    branches: [stackline]
   pull_request:
-    branches:
-      - main
-      - v4-dev
-      - "!dependabot/**"
-  schedule:
-    - cron: "0 2 * * 4"
+    branches: [stackline]
   workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  security-events: write
 
 jobs:
   analyze:
-    name: Analyze
+    name: JavaScript and TypeScript analysis
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: github/codeql-action/init@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28 # v4.37.8
         with:
-          persist-credentials: false
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@96f518a34f7a870018057716cc4d7a5c014bd61c # v3.29.10
-        with:
-          config-file: ./.github/codeql/codeql-config.yml
-          languages: "javascript"
-          queries: +security-and-quality
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@96f518a34f7a870018057716cc4d7a5c014bd61c # v3.29.10
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@96f518a34f7a870018057716cc4d7a5c014bd61c # v3.29.10
-        with:
-          category: "/language:javascript"
+          languages: javascript-typescript
+      - uses: github/codeql-action/analyze@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28 # v4.37.8

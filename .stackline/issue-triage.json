@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-09-29T00:24:08.250483+00:00",
+  "upstreamRepository": "twbs/bootstrap",
+  "coverage": "Most recently updated 100 open and 30 closed issue/PR entries; PRs removed. This is triage evidence, not a claim of exhaustive review.",
+  "openIssues": [
+    {
+      "number": 42955,
+      "title": "v6: Password strength component - not needed?",
+      "url": "https://github.com/twbs/bootstrap/issues/42955"
+    },
+    {
+      "number": 37205,
+      "title": "Arrow Indicator for Dropdown Menus",
+      "url": "https://github.com/twbs/bootstrap/issues/37205"
+    },
+    {
+      "number": 42907,
+      "title": "Spacing scale audit: 53 literal spacing values off your own token scale",
+      "url": "https://github.com/twbs/bootstrap/issues/42907"
+    },
+    {
+      "number": 42872,
+      "title": "Suggestion: Utility class for `font-variant-numeric: tabular-nums` (not to be confused with `.font-monospace`)",
+      "url": "https://github.com/twbs/bootstrap/issues/42872"
+    },
+    {
+      "number": 42889,
+      "title": "Add multi-line text truncation utilities",
+      "url": "https://github.com/twbs/bootstrap/issues/42889"
+    },
+    {
+      "number": 42808,
+      "title": "Proposal: Consider migrating the Bootstrap repository from npm to pnpm",
+      "url": "https://github.com/twbs/bootstrap/issues/42808"
+    },
+    {
+      "number": 40859,
+      "title": "Visually-hidden breakpoints",
+      "url": "https://github.com/twbs/bootstrap/issues/40859"
+    },
+    {
+      "number": 42662,
+      "title": "JavaScript libraries can also provide an IIFE build.",
+      "url": "https://github.com/twbs/bootstrap/issues/42662"
+    },
+    {
+      "number": 34299,
+      "title": "Show collapsed content when linking directly to #fragment",
+      "url": "https://github.com/twbs/bootstrap/issues/34299"
+    },
+    {
+      "number": 31088,
+      "title": "popovers: do not dismiss on next click inside",
+      "url": "https://github.com/twbs/bootstrap/issues/31088"
+    },
+    {
+      "number": 41596,
+      "title": "Stacked progress bars don't use transitions when updated",
+      "url": "https://github.com/twbs/bootstrap/issues/41596"
+    },
+    {
+      "number": 39257,
+      "title": "FloatingLabels not working for input date or input time",
+      "url": "https://github.com/twbs/bootstrap/issues/39257"
+    },
+    {
+      "number": 39867,
+      "title": "Floating Labels for File Input",
+      "url": "https://github.com/twbs/bootstrap/issues/39867"
+    },
+    {
+      "number": 42648,
+      "title": "Consider CSS `gap` utilities as a replacement for gutter classes",
+      "url": "https://github.com/twbs/bootstrap/issues/42648"
+    },
+    {
+      "number": 42677,
+      "title": "Tabs ADA Title II non-compliant in horizontal orientation",
+      "url": "https://github.com/twbs/bootstrap/issues/42677"
+    },
+    {
+      "number": 42754,
+      "title": "v6: .drawer-sheet ignores .drawer-start or .drawer-end but is always centered on screen",
+      "url": "https://github.com/twbs/bootstrap/issues/42754"
+    },
+    {
+      "number": 42742,
+      "title": "Add docs for the NuGet package",
+      "url": "https://github.com/twbs/bootstrap/issues/42742"
+    },
+    {
+      "number": 41944,
+      "title": "Docs: Suggestion; update \"Color and background\" note on color-contrast function",
+      "url": "https://github.com/twbs/bootstrap/issues/41944"
+    },
+    {
+      "number": 42674,
+      "title": "Can we add a sidebar component?",
+      "url": "https://github.com/twbs/bootstrap/issues/42674"
+    },
+    {
+      "number": 42546,
+      "title": "Empty space where scrollbar lives on Windows Chromium browsers with `scrollbar-gutter: stable`",
+      "url": "https://github.com/twbs/bootstrap/issues/42546"
+    },
+    {
+      "number": 37807,
+      "title": "Grid System should support CSS Container Queries for responsive column sizing",
+      "url": "https://github.com/twbs/bootstrap/issues/37807"
+    },
+    {
+      "number": 35900,
+      "title": "Navbar hides initial content when jumping to in-page anchor",
+      "url": "https://github.com/twbs/bootstrap/issues/35900"
+    },
+    {
+      "number": 42330,
+      "title": "Add MCP server for Bootstrap docs and component API",
+      "url": "https://github.com/twbs/bootstrap/issues/42330"
+    },
+    {
+      "number": 41895,
+      "title": "Add an example of using the nested Collapse component",
+      "url": "https://github.com/twbs/bootstrap/issues/41895"
+    },
+    {
+      "number": 40962,
+      "title": "dart-sass 1.80.0+ throwing a lot of deprecations",
+      "url": "https://github.com/twbs/bootstrap/issues/40962"
+    },
+    {
+      "number": 39213,
+      "title": "Feature request: add responsive btn-group-vertical classes",
+      "url": "https://github.com/twbs/bootstrap/issues/39213"
+    },
+    {
+      "number": 42065,
+      "title": "Popovers and tooltips should remain open when content is hovered",
+      "url": "https://github.com/twbs/bootstrap/issues/42065"
+    }
+  ],
+  "recentClosedIssues": [
+    {
+      "number": 42098,
+      "title": "On resizing, hide shown navigation",
+      "url": "https://github.com/twbs/bootstrap/issues/42098"
+    },
+    {
+      "number": 42845,
+      "title": "Issues with the nav-overflow component after the latest fix",
+      "url": "https://github.com/twbs/bootstrap/issues/42845"
+    },
+    {
+      "number": 42836,
+      "title": "v6: vanilla-calendar-pro v3.2.0",
+      "url": "https://github.com/twbs/bootstrap/issues/42836"
+    },
+    {
+      "number": 42936,
+      "title": "data-bs-parent in accordion and collapse bug",
+      "url": "https://github.com/twbs/bootstrap/issues/42936"
+    }
+  ],
+  "decision": "Maintenance adoption with preserved runtime payload. No runtime defect correction is claimed. Reports remain visible for subsequent targeted reproduction.",
+  "limits": "Issue titles and bodies were reviewed from the bounded primary-source snapshot; this does not claim exhaustive issue closure or vulnerability absence."
+}
