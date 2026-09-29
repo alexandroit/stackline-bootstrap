@@ -1,0 +1,28 @@
+{
+  "repository": "alexandroit/stackline-bootstrap",
+  "packages": [
+    {
+      "name": "@stackline/bootstrap",
+      "path": "README.md",
+      "version": "1.0.1",
+      "baselineVersion": "1.0.0",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "bootstrap",
+        "css",
+        "sass",
+        "mobile-first",
+        "responsive",
+        "front-end",
+        "framework",
+        "web"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/bootstrap/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/bootstrap/-/bootstrap-1.0.0.tgz",
+      "baselineIntegrity": "sha512-gksH3yLS3RpafMvUknoiv70X9an5JK077ShrOItKSlEuthR/hvdz9zHwwMCzFHbrKi9i3e8A3h4kwewAsEcz9A==",
+      "expectedSha512": "85301297e668ba0f2c7584d9f8cfab6516569f22c5b7929b76282a1c5ad489dfbd30521e92f0b7817edf1aa3e84a9b0b3f77947124ce2607118db36477ba1175",
+      "tag": "docs-stackline-bootstrap-v1.0.1"
+    }
+  ]
+}
