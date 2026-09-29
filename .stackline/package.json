@@ -1,11 +1,14 @@
 {
   "name": "@stackline/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "config": {
     "version_short": "5.3"
   },
   "keywords": [
+    "stackline",
+    "npm-package",
+    "bootstrap",
     "css",
     "sass",
     "mobile-first",
@@ -14,7 +17,7 @@
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/alexandroit/stackline-bootstrap#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/bootstrap/",
   "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
   "license": "MIT",
   "repository": {
