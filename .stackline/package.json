@@ -1,7 +1,7 @@
 {
   "name": "@stackline/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "config": {
     "version_short": "5.3"
   },
