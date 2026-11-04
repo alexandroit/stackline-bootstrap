@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/bootstrap/)** | **[npm](https://www.npmjs.com/package/@stackline/bootstrap)** | **[Issues](https://github.com/alexandroit/stackline-bootstrap/issues)** | **[Repository](https://github.com/alexandroit/stackline-bootstrap)**
 
-**Current package version:** `1.0.4`
+**Current package version:** `1.0.5`
 
 ---
 
@@ -22,7 +22,7 @@
 
 | Item | Value |
 | :--- | :--- |
-| Package | `@stackline/bootstrap@1.0.4` |
+| Package | `@stackline/bootstrap@1.0.5` |
 | API target | `bootstrap@5.3.8` |
 | Supported Node.js | `See supported framework requirements` |
 | License | `MIT` |
@@ -292,4 +292,4 @@ Use this repository's issue tracker for reproducible bugs and feature requests. 
 
 ## Upstream documentation
 
-The original upstream README is preserved in [README.upstream.md](README.upstream.md).
+The original upstream README is preserved in [UPSTREAM_README.md](UPSTREAM_README.md).
