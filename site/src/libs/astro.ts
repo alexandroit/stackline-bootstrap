@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { rehypeHeadingIds } from '@astrojs/markdown-remark'
+import { rehypeHeadingIds, unified } from '@astrojs/markdown-remark'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import type { AstroIntegration } from 'astro'
@@ -41,7 +41,6 @@ export function bootstrap(): AstroIntegration[] {
   configurePrism()
 
   return [
-    bootstrap_auto_import(),
     {
       name: 'bootstrap-integration',
       hooks: {
@@ -52,23 +51,26 @@ export function bootstrap(): AstroIntegration[] {
           // Add the remark and rehype plugins.
           updateConfig({
             markdown: {
-              rehypePlugins: [
-                rehypeHeadingIds,
-                [
-                  rehypeAutolinkHeadings,
-                  {
-                    behavior: 'append',
-                    content: [{ type: 'text', value: ' ' }],
-                    properties: (element: Element) => ({
-                      class: 'anchor-link',
-                      ariaLabel: `Link to this section: ${(element.children[0] as Text).value}`
-                    }),
-                    test: (element: Element) => element.tagName.match(headingsRangeRegex)
-                  }
+              processor: unified({
+                smartypants: false,
+                rehypePlugins: [
+                  rehypeHeadingIds,
+                  [
+                    rehypeAutolinkHeadings,
+                    {
+                      behavior: 'append',
+                      content: [{ type: 'text', value: ' ' }],
+                      properties: (element: Element) => ({
+                        class: 'anchor-link',
+                        ariaLabel: `Link to this section: ${(element.children[0] as Text).value}`
+                      }),
+                      test: (element: Element) => element.tagName.match(headingsRangeRegex)
+                    }
+                  ],
+                  rehypeBsTable
                 ],
-                rehypeBsTable
-              ],
-              remarkPlugins: [remarkBsConfig, remarkBsDocsref]
+                remarkPlugins: [remarkBsConfig, remarkBsDocsref]
+              })
             }
           })
         },
@@ -83,6 +85,7 @@ export function bootstrap(): AstroIntegration[] {
         }
       }
     },
+    bootstrap_auto_import(),
     // https://github.com/withastro/astro/issues/6475
     mdx() as AstroIntegration,
     sitemap({

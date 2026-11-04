@@ -42,11 +42,12 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
 
   const args = [
     '-jar',
-    `"${vnu}"`,
+    vnu,
     '--asciiquotes',
     '--skip-non-html',
     '--Werror',
-    `--filterpattern "${ignores}"`,
+    '--filterpattern',
+    ignores,
     '_site/',
     'js/tests/'
   ]
@@ -59,7 +60,6 @@ execFile('java', ['-version'], (error, stdout, stderr) => {
   console.log(`command used: java ${args.join(' ')}`)
 
   return spawn('java', args, {
-    shell: true,
     stdio: 'inherit'
   })
     .on('exit', process.exit)

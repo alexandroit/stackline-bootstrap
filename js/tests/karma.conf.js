@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('node:path')
-const ip = require('ip')
+const { networkInterfaces } = require('node:os')
 const { babel } = require('@rollup/plugin-babel')
 const istanbul = require('rollup-plugin-istanbul')
 const { nodeResolve } = require('@rollup/plugin-node-resolve')
@@ -28,7 +28,7 @@ const detectBrowsers = {
   usePhantomJS: false,
   postDetection(availableBrowser) {
     // On CI just use Chrome
-    if (ENV.CI === true) {
+    if (ENV.CI === 'true') {
       return ['ChromeHeadless']
     }
 
@@ -99,7 +99,7 @@ const config = {
 }
 
 if (BROWSERSTACK) {
-  config.hostname = ip.address()
+  config.hostname = Object.values(networkInterfaces()).flat().find(address => address.family === 'IPv4' && !address.internal)?.address || '127.0.0.1'
   config.browserStack = {
     username: ENV.BROWSER_STACK_USERNAME,
     accessKey: ENV.BROWSER_STACK_ACCESS_KEY,
@@ -151,7 +151,7 @@ if (BROWSERSTACK) {
   }
 
   if (DEBUG) {
-    config.hostname = ip.address()
+    config.hostname = Object.values(networkInterfaces()).flat().find(address => address.family === 'IPv4' && !address.internal)?.address || '127.0.0.1'
     plugins.push('karma-jasmine-html-reporter')
     reporters.push('kjhtml')
     config.singleRun = false
