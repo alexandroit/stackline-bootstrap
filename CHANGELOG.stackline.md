@@ -1,5 +1,11 @@
 # Stackline changelog
 
+## 1.0.4 - 2026-11-04
+
+- Publish the Stackline README with the correct package version.
+- Preserve the original upstream README separately; runtime files remain unchanged.
+- Verify the README inside the exact npm artifact before publication.
+
 ## 1.0.3
 
 - Update Astro and its integrations, migrate the documentation content API, update bundle-size tooling, and replace the vulnerable IP helper with the Node standard library. Preserve the Bootstrap runtime payload and CSS/browser tests.

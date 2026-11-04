@@ -5,7 +5,9 @@
   "upstreamIntegrity": "sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==",
   "upstreamCommit": "25aa8cc0b32f0d1a54be575347e6d84b70b1acd7",
   "sourcePackageDirectory": ".",
-  "overlays": {},
+  "overlays": {
+    "README.md": "README.md"
+  },
   "tests": [
     "npm ci --ignore-scripts",
     "npm run dist",
